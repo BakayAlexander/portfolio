@@ -33,7 +33,7 @@ const Header = () => {
         <div className={`${classes.nav__wrapper}`}>
           <div className={`${classes.logo}`}>
             <h1>
-              <span>A</span>lexander
+              <span>A</span>lexander <span>B</span>akay
             </h1>
           </div>
           <div className={`${classes.navigation}`}>
