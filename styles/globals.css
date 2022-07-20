@@ -76,3 +76,13 @@ footer {
 .secondary__btn a:hover {
   color: #01d293;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #808dad;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: #171f38;
+}
