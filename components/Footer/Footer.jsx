@@ -2,29 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import classes from './footer.module.css';
 import Link from 'next/link';
-
-const NAV__LINK = [
-  {
-    path: '/',
-    display: 'Home',
-  },
-  {
-    path: '#about',
-    display: 'About',
-  },
-  {
-    path: '#services',
-    display: 'Services',
-  },
-  {
-    path: '#portfolio',
-    display: 'Portfolio',
-  },
-  {
-    path: '#contact',
-    display: 'Contact',
-  },
-];
+import NavBar from '../NavBar/NavBar';
 
 const Footer = () => {
   const date = new Date();
@@ -34,13 +12,7 @@ const Footer = () => {
     <Container>
       <Row>
         <Col lg="6">
-          <div className={`${classes.nav__menu}`}>
-            {NAV__LINK.map((link, index) => (
-              <Link href={link.path} key={index}>
-                {link.display}
-              </Link>
-            ))}
-          </div>
+          <NavBar />
         </Col>
         <Col lg="6">
           <div className={`${classes.footer__creator}`}>

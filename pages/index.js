@@ -1,4 +1,13 @@
-import Hero from '../components/UI/Hero';
+import { Fragment } from 'react';
+import About from '../components/UI/About/About';
+import Profile from '../components/UI/Profile/Profile';
+import Services from '../components/UI/Services/Services';
 export default function Home() {
-  return <h1>Hello world!</h1>;
+  return (
+    <Fragment>
+      <Profile />
+      <Services />
+      <About />
+    </Fragment>
+  );
 }

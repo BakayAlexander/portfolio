@@ -1,0 +1,84 @@
+.profile {
+  padding-top: 60px !important;
+}
+
+.profile__content h5 {
+  color: #808dad;
+  font-weight: 400;
+}
+
+.profile__content {
+  padding-top: 50px;
+}
+
+.profile__image {
+  position: relative;
+  z-index: 2;
+}
+
+.profile__image img {
+  border-radius: 50px 5px 5px 5px;
+}
+
+.profile__skills {
+  text-align: left;
+  width: 130px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: #808dad26;
+  z-index: 3;
+}
+
+.profile__skills h6 {
+  background: transparent;
+  color: #fff;
+}
+
+.profile__skills span i {
+  color: #01d293;
+  background: transparent;
+}
+
+.profile__skills span {
+  background: transparent;
+}
+
+.profile__exp {
+  width: 150px;
+  position: absolute;
+  bottom: -8%;
+  right: 5%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #808dad26;
+  z-index: 3;
+}
+
+.profile__exp span,
+.profile__exp h5,
+.profile__exp h6 {
+  background: transparent !important;
+}
+
+.profile__exp h6 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.profile__exp h5 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.profile__exp span i {
+  padding: 5px;
+  color: #01d293;
+  background: #808dad;
+  border-radius: 5px;
+}

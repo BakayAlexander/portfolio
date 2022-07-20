@@ -51,6 +51,7 @@ footer {
   background: #171f38 !important;
   padding: 7px 20px !important;
   border: 1px solid #01d293 !important;
+  border-radius: 5px;
 }
 
 .primary__btn a {
@@ -68,9 +69,10 @@ footer {
 
 .secondary__btn a {
   color: #01d293 !important;
+  text-decoration: none;
 }
 
 .primary__btn a:hover,
 .secondary__btn a:hover {
-  color: unset;
+  color: #01d293;
 }
