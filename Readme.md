@@ -1,5 +1,4 @@
--next
-
+- next
 - bootstrap -reactstrap
 - remixicon
 - react-slick
