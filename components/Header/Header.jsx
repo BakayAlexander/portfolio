@@ -3,6 +3,7 @@ import classes from './header.module.css';
 import Link from 'next/link';
 import { Container } from 'reactstrap';
 import NavBar from '../NavBar/NavBar';
+import { contactInfo } from '../../constants/constants';
 
 const Header = () => {
   return (
@@ -18,8 +19,8 @@ const Header = () => {
             <NavBar />
             <div className={`${classes.nav__right}`}>
               <p className="d-flex align-items-center gap-2">
-                <i className="ri-phone-line"></i>
-                +905451841029
+                <i className="ri-whatsapp-line"></i>
+                {contactInfo.number}
               </p>
             </div>
           </div>

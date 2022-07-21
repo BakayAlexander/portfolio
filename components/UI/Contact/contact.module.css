@@ -1,0 +1,36 @@
+.contact {
+  padding-bottom: 60px;
+}
+.contact__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  column-gap: 1rem;
+}
+
+.contact__item p {
+  margin-bottom: 0;
+}
+
+.contact__item span i {
+  color: #01d293;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.social__links {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  column-gap: 1rem;
+  color: #808dad !important;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

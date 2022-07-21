@@ -20,3 +20,18 @@ export const NAV__LINK = [
     display: 'Contact',
   },
 ];
+
+export const categoryProjects = {
+  all: 'All',
+  commercial: 'Commercial',
+  study: 'Study',
+};
+
+export const contactInfo = {
+  number: '+7 (989) 714-41-54',
+  adress: 'Istanbul - Turkey',
+  email: 'bakay.dvr@gmail.com',
+  linkedIn: '#',
+  instagram: '#',
+  github: '#',
+};
