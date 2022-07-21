@@ -19,3 +19,9 @@
   text-align: center;
   padding-top: 20px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .footer__creator h6 {
+    text-align: center;
+  }
+}

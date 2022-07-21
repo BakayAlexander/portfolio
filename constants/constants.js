@@ -1,6 +1,6 @@
 export const NAV__LINK = [
   {
-    path: '/',
+    path: '#home',
     display: 'Home',
   },
   {

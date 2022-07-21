@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import classes from './header.module.css';
 import Link from 'next/link';
 import { Container } from 'reactstrap';
@@ -7,8 +7,9 @@ import { contactInfo } from '../../constants/constants';
 
 const Header = () => {
   const headerRef = useRef(null);
+  const menuRef = useRef(null);
 
-  const headerFunc = () => {
+  const addStickyHeader = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       headerRef.current.classList.add(classes.header__shrink);
     } else {
@@ -16,9 +17,11 @@ const Header = () => {
     }
   };
 
+  const toggleMobileMenu = () => menuRef.current.classList.toggle(classes.navigation_active);
+
   useEffect(() => {
-    window.addEventListener('scroll', headerFunc);
-    return () => window.removeEventListener('scroll', headerFunc);
+    window.addEventListener('scroll', addStickyHeader);
+    return () => window.removeEventListener('scroll', addStickyHeader);
   }, []);
 
   return (
@@ -30,7 +33,8 @@ const Header = () => {
               <span>A</span>lexander <span>B</span>akay
             </h1>
           </div>
-          <div className={`${classes.navigation}`}>
+          <div className={`${classes.navigation}`} ref={menuRef} onClick={toggleMobileMenu}>
+            {/* ${classes.navigation_active} */}
             <NavBar />
             <div className={`${classes.nav__right}`}>
               <p className="d-flex align-items-center gap-2">
@@ -38,6 +42,9 @@ const Header = () => {
                 {contactInfo.number}
               </p>
             </div>
+          </div>
+          <div className={classes.mobile__menu}>
+            <i className="ri-menu-line" onClick={toggleMobileMenu}></i>
           </div>
         </div>
       </Container>

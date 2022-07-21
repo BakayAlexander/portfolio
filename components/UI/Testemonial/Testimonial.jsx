@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { Container, Row, Col } from 'reactstrap';
 import classes from './testimonial.module.css';
 import networkImg from '../../../public/images/connected-world.png';
 import Image from 'next/image';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
+import TestimonialItem from '../TestimonialItem/TestimonialItem';
+import { testimonialsData } from '../../data/testimonials';
 
 const Testimonial = () => {
+  const [showArrows, setShowArrows] = useState(true);
+
+  useEffect(() => {
+    if (window.screen.width < 1000) {
+      setShowArrows(false);
+    }
+  }, []);
+
   const sliderSettings = {
     dots: false,
     autoplay: true,
@@ -16,60 +26,28 @@ const Testimonial = () => {
     swipeToSlide: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: showArrows,
   };
+
   return (
     <section>
       <Container>
         <Row>
-          <Col lg="6" md="6">
+          <Col lg="6" md="6" className={classes.testimonial__image}>
             <Image src={networkImg} alt="network image" width="400" height="400" />
           </Col>
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Testimonials" />
             <h4 className="mt-4 mb-5">What my client says</h4>
             <Slider {...sliderSettings}>
-              <div className={`${classes.testimonial__item}`}>
-                <div className={`${classes.testimonial__client}`}>
-                  <Image src="/images/hero.jpeg" alt="client-image" width="50" height="50" className="rounded-2" />
-                  <div>
-                    <h6>John Doe</h6>
-                    <h6>Software Engineer</h6>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum saepe voluptates modi ad, sed aliquid
-                  ipsum in quis eos libero et corrupti similique praesentium dignissimos ratione adipisci. Nulla, nam
-                  doloremque?
-                </p>
-              </div>
-              <div className={`${classes.testimonial__item}`}>
-                <div className={`${classes.testimonial__client}`}>
-                  <Image src="/images/hero.jpeg" alt="client-image" width="50" height="50" className="rounded-2" />
-                  <div>
-                    <h6>Jeff Bezos</h6>
-                    <h6>Software Engineer</h6>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum saepe voluptates modi ad, sed aliquid
-                  ipsum in quis eos libero et corrupti similique praesentium dignissimos ratione adipisci. Nulla, nam
-                  doloremque?
-                </p>
-              </div>
-              <div className={`${classes.testimonial__item}`}>
-                <div className={`${classes.testimonial__client}`}>
-                  <Image src="/images/hero.jpeg" alt="client-image" width="50" height="50" className="rounded-2" />
-                  <div>
-                    <h6>Patrick Doe</h6>
-                    <h6>Software Engineer</h6>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum saepe voluptates modi ad, sed aliquid
-                  ipsum in quis eos libero et corrupti similique praesentium dignissimos ratione adipisci. Nulla, nam
-                  doloremque?
-                </p>
-              </div>
+              {testimonialsData.map(testimonial => (
+                <TestimonialItem
+                  key={testimonial.id}
+                  author={testimonial.author}
+                  position={testimonial.position}
+                  text={testimonial.text}
+                />
+              ))}
             </Slider>
           </Col>
         </Row>

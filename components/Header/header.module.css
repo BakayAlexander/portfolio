@@ -52,5 +52,50 @@
   height: 80px;
   line-height: 80px;
   box-shadow: 5px 5px 30px -5px #01d29344 !important;
-  z-index: 9999;
+  z-index: 10;
+}
+
+.mobile__menu {
+  display: none;
+}
+
+.mobile__menu {
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .navigation_active {
+    display: block !important;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #171f3897;
+    z-index: 10;
+    display: none;
+  }
+
+  .nav__right {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: block !important;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .header__shrink {
+    height: 83px;
+  }
 }

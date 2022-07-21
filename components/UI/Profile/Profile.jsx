@@ -8,7 +8,7 @@ import classes from './profile.module.css';
 
 const Profile = () => {
   return (
-    <section className={`${classes.profile}`}>
+    <section className={`${classes.profile}`} id="home">
       <Container>
         <Row>
           <Col lg="6" md="6">

@@ -34,7 +34,7 @@ const Portfolio = () => {
             <h4 className="mt-4">Some of my projects</h4>
           </Col>
           <Col lg="6" md="6">
-            <div className="text-end">
+            <div className={`${classes.tab__buttons} text-end`}>
               <button
                 className={`${filter === categoryProjects.all && activeButtonClass} secondary__btn text-white`}
                 onClick={() => setFilter(categoryProjects.all)}
@@ -56,7 +56,7 @@ const Portfolio = () => {
             </div>
           </Col>
           {data?.map(portfolio => (
-            <Col lg="4" md="4" key={portfolio.id}>
+            <Col lg="4" md="6" sm="6" key={portfolio.id}>
               <PortfolioItem
                 title={portfolio.title}
                 image={portfolio.image}

@@ -1,5 +1,5 @@
 .profile {
-  padding-top: 60px !important;
+  padding-top: 60px;
 }
 
 .profile__content h5 {
@@ -81,4 +81,62 @@
   color: #01d293;
   background: #808dad;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .profile__content h2 {
+    font-size: 1.6rem;
+  }
+
+  .profile__content h5 {
+    font-size: 1.1rem;
+  }
+
+  .profile__image img {
+    width: 250px !important;
+  }
+
+  .profile__content {
+    padding-top: 0;
+  }
+
+  .profile__skills {
+    padding: 10px;
+    left: 1%;
+  }
+
+  .profile__skills h6 {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .profile__exp {
+    padding: 10px;
+    right: -8%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile__image {
+    text-align: center !important;
+    margin-top: 50px;
+  }
+
+  .profile__skills {
+    left: 5%;
+  }
+
+  .profile__exp {
+    right: 21%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .profile__skills,
+  .profile__exp {
+    display: none !important;
+  }
+  .profile {
+    padding-top: 30px;
+  }
 }

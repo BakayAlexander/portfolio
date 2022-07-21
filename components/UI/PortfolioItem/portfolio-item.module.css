@@ -36,3 +36,11 @@
 .portfolio__link a {
   background: #171f38 !important;
 }
+
+@media only screen and (max-width: 576px) {
+  .portfolio__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
