@@ -41,4 +41,7 @@
   .service__item h5 {
     font-size: 0.9rem;
   }
+  .service__item:hover {
+    pointer-events: none;
+  }
 }

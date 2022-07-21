@@ -48,16 +48,13 @@ footer {
 }
 
 .primary__btn {
-  background: #171f38 !important;
+  /* background: #171f38 !important; */
   padding: 7px 20px !important;
   border: 1px solid #01d293 !important;
   border-radius: 5px;
-}
-
-.primary__btn a {
-  text-decoration: none;
   color: #01d293;
   background: transparent !important;
+  text-decoration: none;
 }
 
 .secondary__btn {

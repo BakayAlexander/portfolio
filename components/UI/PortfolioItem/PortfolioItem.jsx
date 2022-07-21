@@ -19,13 +19,15 @@ const PortfolioItem = ({ title, image, projectUrl, projectRepo, keywords }) => {
       </div>
       <div className={`${classes.portfolio__link}`}>
         {projectRepo && (
-          <button className="primary__btn">
-            <Link href={projectUrl}>Repo</Link>
-          </button>
+          <a href={projectRepo} target="_blank" rel="noopener noreferrer">
+            <button className="primary__btn">Repo</button>
+          </a>
         )}
         {projectUrl && (
           <button className="secondary__btn">
-            <Link href={projectUrl}>Launch</Link>
+            <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+              Launch
+            </a>
           </button>
         )}
       </div>

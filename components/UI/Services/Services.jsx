@@ -13,7 +13,7 @@ const Services = () => {
             <div className={`${classes.services__container}`}>
               <div>
                 <ServicesItem title="Web Development" icon="ri-computer-line" />
-                <ServicesItem title="Mobile app Development" icon="ri-apps-line" />
+                <ServicesItem title="Mobile App Development" icon="ri-apps-line" />
               </div>
               <ServicesItem title="Full-stack Development" icon="ri-code-view" />
             </div>

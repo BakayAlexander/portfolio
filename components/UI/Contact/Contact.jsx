@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { contactInfo } from '../../../constants/constants';
+import { contactInfo } from '../../data/personal';
 import Form from '../Form/Form';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
 import classes from './contact.module.css';
@@ -40,15 +40,15 @@ const Contact = () => {
               </li>
             </ul>
             <div className={classes.social__links}>
-              <Link href={contactInfo.linkedIn}>
+              <a href={contactInfo.linkedIn} target="_blank" rel="noopener noreferrer">
                 <i className="ri-linkedin-line"></i>
-              </Link>
-              <Link href={contactInfo.instagram}>
+              </a>
+              <a href={contactInfo.instagram} target="_blank" rel="noopener noreferrer">
                 <i className="ri-instagram-line"></i>
-              </Link>
-              <Link href={contactInfo.github}>
+              </a>
+              <a href={contactInfo.instagram} target="_blank" rel="noopener noreferrer">
                 <i className="ri-github-line"></i>
-              </Link>
+              </a>
             </div>
           </Col>
           <Col lg="6" md="6">

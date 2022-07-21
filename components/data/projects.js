@@ -1,12 +1,18 @@
+export const categoryProjects = {
+  all: 'All',
+  commercial: 'Commercial',
+  study: 'Study',
+};
+
 export const portfolioData = [
   {
     id: '01',
-    title: 'Transportation Mobile App',
-    image: '/images/portfolio-01.jpg',
+    title: 'Balaclava',
+    image: '/images/portfolio-01.jpeg',
     category: 'Study',
-    keywords: ['Mobile', 'App', 'UI-UX'],
-    projectUrl: '#',
-    projectRepo: '#',
+    keywords: ['HTML', 'CSS'],
+    projectUrl: 'https://balaclava-static.netlify.app/',
+    projectRepo: 'https://github.com/BakayAlexander/balaklava-project',
   },
 
   {

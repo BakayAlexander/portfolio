@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
 import profileImg from '../../../public/images/hero.jpeg';
+import { contactInfo } from '../../data/personal';
 import classes from './profile.module.css';
 
 const Profile = () => {
@@ -22,11 +23,13 @@ const Profile = () => {
                 similique debitis quibusdam odit!
               </p>
               <div className="mt-5">
-                <button className="primary__btn">
-                  <Link href="#">Hire me</Link>
-                </button>
+                <a href={contactInfo.linkedIn} target="_blank" rel="noopener noreferrer">
+                  <button className="primary__btn">Hire me</button>
+                </a>
                 <button className="secondary__btn">
-                  <Link href="#">Download CV</Link>
+                  <a href={contactInfo.cvLink} target="_blank" rel="noopener noreferrer">
+                    Download CV
+                  </a>
                 </button>
               </div>
             </div>

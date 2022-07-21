@@ -9,6 +9,7 @@ import img04 from '../../../public/images/img-04.jpeg';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
 import Link from 'next/link';
 import Image from 'next/image';
+import { contactInfo } from '../../data/personal';
 
 const About = () => {
   return (
@@ -55,11 +56,13 @@ const About = () => {
               </div>
             </div>
             <div className="mt-5">
-              <button className="primary__btn">
-                <Link href="#portfolio">My Portfolio</Link>
-              </button>
+              <a href={contactInfo.github} target="_blank" rel="noopener noreferrer">
+                <button className="primary__btn">My Repository</button>
+              </a>
               <button className="secondary__btn">
-                <Link href="#">Download CV</Link>
+                <a href={contactInfo.cvLink} target="_blank" rel="noopener noreferrer">
+                  Download CV
+                </a>
               </button>
             </div>
           </Col>

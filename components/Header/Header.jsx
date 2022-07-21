@@ -3,7 +3,7 @@ import classes from './header.module.css';
 import Link from 'next/link';
 import { Container } from 'reactstrap';
 import NavBar from '../NavBar/NavBar';
-import { contactInfo } from '../../constants/constants';
+import { contactInfo } from '../data/personal';
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -34,7 +34,6 @@ const Header = () => {
             </h1>
           </div>
           <div className={`${classes.navigation}`} ref={menuRef} onClick={toggleMobileMenu}>
-            {/* ${classes.navigation_active} */}
             <NavBar />
             <div className={`${classes.nav__right}`}>
               <p className="d-flex align-items-center gap-2">
