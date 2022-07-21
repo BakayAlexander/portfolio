@@ -1,0 +1,21 @@
+.form button {
+  color: #01d293;
+}
+
+.form__input input,
+.form__input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #171f38;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.form__input input::placeholder,
+.form__input textarea::placeholder {
+  color: #808dad;
+  font-size: 0.8rem;
+}
