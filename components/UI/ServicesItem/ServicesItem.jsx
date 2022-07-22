@@ -3,7 +3,7 @@ import classes from './services-item.module.css';
 
 const ServicesItem = ({ title, icon }) => {
   return (
-    <div className={`${classes.service__item}`}>
+    <div className={classes.service__item}>
       <span>
         <i className={icon}></i>
       </span>

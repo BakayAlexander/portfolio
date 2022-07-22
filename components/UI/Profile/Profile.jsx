@@ -9,11 +9,11 @@ import classes from './profile.module.css';
 
 const Profile = () => {
   return (
-    <section className={`${classes.profile}`} id="home">
+    <section className={classes.profile} id="home">
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <div className={`${classes.profile__content}`}>
+            <div className={classes.profile__content}>
               <SectionSubtitle subtitle="Hello" />
               <h2 className="mt-3 mb-3">I&apos;m Alexander Bakay</h2>
               <h5 className="mb4">Frontend developer</h5>
@@ -33,7 +33,7 @@ const Profile = () => {
           <Col lg="6" md="6">
             <div className={`${classes.profile__image} text-end`}>
               <Image alt="Alexander photo" src={profileImg} width="320" height="420" />
-              <div className={`${classes.profile__skills}`}>
+              <div className={classes.profile__skills}>
                 <h6>Skills</h6>
                 <span>
                   <i className="ri-bar-chart-line"></i>

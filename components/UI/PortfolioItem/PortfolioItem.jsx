@@ -5,19 +5,19 @@ import classes from './portfolio-item.module.css';
 
 const PortfolioItem = ({ title, image, projectUrl, projectRepo, keywords }) => {
   return (
-    <div className={`${classes.portfolio__item}`}>
+    <div className={classes.portfolio__item}>
       <div className="bg-transparent">
         <h6>{title}</h6>
         {keywords.map((keyword, index) => (
-          <span className={`${classes.portfolio__keyword}`} key={index}>
+          <span className={classes.portfolio__keyword} key={index}>
             {keyword}
           </span>
         ))}
       </div>
-      <div className={`${classes.portfolio__image}`}>
+      <div className={classes.portfolio__image}>
         <Image src={image} alt="project image" width="380" height="250" />
       </div>
-      <div className={`${classes.portfolio__link}`}>
+      <div className={classes.portfolio__link}>
         {projectRepo && (
           <a href={projectRepo} target="_blank" rel="noopener noreferrer">
             <button className="primary__btn">Repo</button>

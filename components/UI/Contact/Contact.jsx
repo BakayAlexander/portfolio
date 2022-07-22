@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { contactInfo } from '../../data/personal';
+import { contactInfo, personalTexts } from '../../data/personal';
 import Form from '../Form/Form';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
 import classes from './contact.module.css';
@@ -14,11 +14,7 @@ const Contact = () => {
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Contacts" />
             <h3 className="mt-4 mb-4">Let&apos;s stay connected</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla modi ad provident dignissimos reiciendis
-              nesciunt tempore ex ratione a. Quisquam et alias amet est ea reiciendis adipisci excepturi provident
-              eaque.
-            </p>
+            <p>{personalTexts.contacts}</p>
             <ul className={classes.contact__list}>
               <li className={classes.contact__item}>
                 <span>

@@ -5,7 +5,7 @@ import classes from './navbar.module.css';
 
 const NavBar = () => {
   return (
-    <div className={`${classes.nav__menu}`}>
+    <div className={classes.nav__menu}>
       {NAV__LINK.map((link, index) => (
         <Link href={link.path} key={index}>
           {link.display}

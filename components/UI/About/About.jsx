@@ -7,7 +7,6 @@ import img02 from '../../../public/images/img-02.jpeg';
 import img03 from '../../../public/images/img-03.jpeg';
 import img04 from '../../../public/images/img-04.jpeg';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
-import Link from 'next/link';
 import Image from 'next/image';
 import { contactInfo, personalTexts } from '../../data/personal';
 
@@ -24,13 +23,13 @@ const About = () => {
             <div className="d-flex align-items-center gap-5">
               <div>
                 <h6 className="d-flex align-items-center gap-2 mt-3 fw-normal">
-                  <span className={`${classes.about__icon}`}>
+                  <span className={classes.about__icon}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
                   Problem solving
                 </h6>
                 <h6 className="d-flex align-items-center gap-2 mt-3 fw-normal">
-                  <span className={`${classes.about__icon}`}>
+                  <span className={classes.about__icon}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
                   Clean code
@@ -38,13 +37,13 @@ const About = () => {
               </div>
               <div>
                 <h6 className="d-flex align-items-center gap-2 mt-3 fw-normal">
-                  <span className={`${classes.about__icon}`}>
+                  <span className={classes.about__icon}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
                   Creative ideas
                 </h6>
                 <h6 className="d-flex align-items-center gap-2 mt-3 fw-normal">
-                  <span className={`${classes.about__icon}`}>
+                  <span className={classes.about__icon}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
                   High quality
