@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { personalTexts } from '../../data/personal';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
 import ServicesItem from '../ServicesItem/ServicesItem';
 import classes from './services.module.css';
@@ -22,11 +23,7 @@ const Services = () => {
             <SectionSubtitle subtitle="What I do" />
             <h3 className="mb-0 mt-4">Better design,</h3>
             <h3 className="mb-4">Better experience</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus minus blanditiis est
-              reiciendis excepturi aut aliquam assumenda architecto totam ullam, labore dolores animi ea quasi!
-              Necessitatibus fuga aperiam accusamus.
-            </p>
+            <p>{personalTexts.services}</p>
           </Col>
         </Row>
       </Container>

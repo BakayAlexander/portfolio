@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
 import profileImg from '../../../public/images/hero.jpeg';
-import { contactInfo } from '../../data/personal';
+import { contactInfo, personalTexts } from '../../data/personal';
 import classes from './profile.module.css';
 
 const Profile = () => {
@@ -17,11 +17,7 @@ const Profile = () => {
               <SectionSubtitle subtitle="Hello" />
               <h2 className="mt-3 mb-3">I&apos;m Alexander Bakay</h2>
               <h5 className="mb4">Frontend developer</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, suscipit. Deleniti eligendi nesciunt
-                minima iusto saepe debitis tenetur itaque possimus. Soluta perspiciatis illo cum. Dolorem libero
-                similique debitis quibusdam odit!
-              </p>
+              <p>{personalTexts.profileMe}</p>
               <div className="mt-5">
                 <a href={contactInfo.linkedIn} target="_blank" rel="noopener noreferrer">
                   <button className="primary__btn">Hire me</button>

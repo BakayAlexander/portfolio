@@ -21,7 +21,7 @@ const Testimonial = () => {
     dots: false,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     infinite: true,
     swipeToSlide: true,
     slidesToShow: 1,
@@ -38,7 +38,7 @@ const Testimonial = () => {
           </Col>
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Testimonials" />
-            <h4 className="mt-4 mb-5">What my client says</h4>
+            <h4 className="mt-4 mb-5">What my client says <span>(just joking)</span></h4>
             <Slider {...sliderSettings}>
               {testimonialsData.map(testimonial => (
                 <TestimonialItem
@@ -46,6 +46,7 @@ const Testimonial = () => {
                   author={testimonial.author}
                   position={testimonial.position}
                   text={testimonial.text}
+                  image={testimonial.image}
                 />
               ))}
             </Slider>

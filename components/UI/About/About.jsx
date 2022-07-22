@@ -9,7 +9,7 @@ import img04 from '../../../public/images/img-04.jpeg';
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
 import Link from 'next/link';
 import Image from 'next/image';
-import { contactInfo } from '../../data/personal';
+import { contactInfo, personalTexts } from '../../data/personal';
 
 const About = () => {
   return (
@@ -20,11 +20,7 @@ const About = () => {
             <SectionSubtitle subtitle="About me" />
             <h3 className="mt-4">I&apos;m here</h3>
             <h3 className="mb-4">to help your next project</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quod eveniet perferendis aperiam temporibus
-              ipsum exercitationem consequatur sapiente qui, beatae quidem neque numquam nam libero minus quibusdam
-              facere animi quaerat!
-            </p>
+            <p>{personalTexts.aboutMe}</p>
             <div className="d-flex align-items-center gap-5">
               <div>
                 <h6 className="d-flex align-items-center gap-2 mt-3 fw-normal">
