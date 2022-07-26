@@ -7,7 +7,7 @@ import classes from './portfolio.module.css';
 
 const Portfolio = () => {
   const [filter, setFilter] = useState('All');
-  const [data, setData] = useState(portfolioData);
+  const [data, setData] = useState([]);
   const activeButtonClass = `${classes.tab__btn_active}`;
 
   const sortReverse = arr => arr.sort((a, b) => b.id - a.id);

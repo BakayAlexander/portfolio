@@ -32,7 +32,9 @@ const Contact = () => {
                 <span>
                   <i className="ri-whatsapp-line"></i>
                 </span>
-                <p>{contactInfo.number}</p>
+                <a href={`https://wa.me/${contactInfo.whatsApp}`} target="_blank" rel="noopener noreferrer">
+                  <p>{contactInfo.number}</p>
+                </a>
               </li>
             </ul>
             <div className={classes.social__links}>

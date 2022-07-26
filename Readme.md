@@ -23,6 +23,6 @@ The page will reload when you make changes.
 - :control_knobs: Remixicon
 - :framed_picture: Slick carousel
 
-# :desktop_computer: Public domain
+### :desktop_computer: Public domain
 
 https://bakay.netlify.app/

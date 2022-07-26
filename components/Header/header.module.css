@@ -37,6 +37,16 @@
   background: #808dad;
 }
 
+.nav__whatsApp {
+  text-decoration: none;
+  cursor: pointer;
+  color: #808dad;
+}
+
+.nav__whatsApp:hover {
+  color: #01d293;
+}
+
 .navigation {
   display: flex;
   align-items: center;

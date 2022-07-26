@@ -1,5 +1,6 @@
 export const contactInfo = {
-  number: '+7 (989) 714-41-54',
+  number: '+7-989-714-41-54',
+  whatsApp: '+79897144154',
   adress: 'Istanbul - Turkey',
   email: 'bakay.dvr@gmail.com',
   linkedIn: 'https://www.linkedin.com/in/alexander-bakay-b6b041224/',

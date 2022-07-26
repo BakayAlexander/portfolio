@@ -18,6 +18,15 @@
   margin-bottom: 0;
 }
 
+.contact__item a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact__item a:hover {
+  color: #01d293 !important;
+}
+
 .contact__item span i {
   color: #01d293;
   font-size: 1.2rem;
