@@ -110,4 +110,13 @@ export const portfolioData = [
     keywords: ['React', 'i18n', 'Ant design'],
     projectUrl: 'https://magnolia-charter.com/',
   },
+  {
+    id: '12',
+    title: 'Netflix 2022',
+    image: '/images/project-12.jpeg',
+    category: 'Study',
+    keywords: ['Next', 'TypeScript', 'Tailwind', 'Firebase'],
+    projectUrl: 'https://bakay-netflix.netlify.app/',
+    projectRepo: 'https://github.com/BakayAlexander/netflix-2022',
+  },
 ];
