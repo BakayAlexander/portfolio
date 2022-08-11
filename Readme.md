@@ -25,4 +25,4 @@ The page will reload when you make changes.
 
 ### :desktop_computer: Public domain
 
-https://bakay.netlify.app/
+https://bakay.dev/
