@@ -2,7 +2,7 @@
   background: #171f38;
   padding: 30px 20px 20px 20px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  height: 100%;
 }
 
 .portfolio__item h6 {
@@ -21,7 +21,7 @@
 }
 
 .portfolio__image {
-  margin: 30px 0px;
+  margin: 20px 0px;
   background: transparent;
 }
 
@@ -35,6 +35,11 @@
 
 .portfolio__link a {
   background: #171f38 !important;
+}
+
+.portfolio__text {
+  background: transparent;
+  height: 3rem;
 }
 
 @media only screen and (max-width: 576px) {

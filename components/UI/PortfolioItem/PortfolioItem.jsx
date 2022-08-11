@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import classes from './portfolio-item.module.css';
 
-const PortfolioItem = ({ title, image, projectUrl, projectRepo, keywords }) => {
+const PortfolioItem = ({ title, image, projectUrl, projectRepo, keywords, text }) => {
   return (
     <div className={classes.portfolio__item}>
       <div className="bg-transparent">
@@ -17,6 +16,7 @@ const PortfolioItem = ({ title, image, projectUrl, projectRepo, keywords }) => {
       <div className={classes.portfolio__image}>
         <Image src={image} alt="project image" width="380" height="250" />
       </div>
+      <p className={classes.portfolio__text}>{text}</p>
       <div className={classes.portfolio__link}>
         {projectRepo && (
           <a href={projectRepo} target="_blank" rel="noopener noreferrer">

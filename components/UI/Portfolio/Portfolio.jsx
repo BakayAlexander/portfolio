@@ -55,13 +55,14 @@ const Portfolio = () => {
             </div>
           </Col>
           {data?.map(portfolio => (
-            <Col lg="4" md="6" sm="6" key={portfolio.id}>
+            <Col lg="4" md="6" sm="6" key={portfolio.id} className="mb-4">
               <PortfolioItem
                 title={portfolio.title}
                 image={portfolio.image}
                 projectUrl={portfolio.projectUrl}
                 projectRepo={portfolio.projectRepo}
                 keywords={portfolio.keywords}
+                text={portfolio.text}
               />
             </Col>
           ))}

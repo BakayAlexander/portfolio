@@ -13,6 +13,7 @@ export const portfolioData = [
     keywords: ['HTML', 'CSS', 'Non-adaptive'],
     projectUrl: 'https://balaclava-static.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/balaklava-project',
+    text: `Small non-adaptive website about Balaclava's history, before its occupation.`,
   },
 
   {
@@ -23,6 +24,7 @@ export const portfolioData = [
     keywords: ['HTML', 'CSS', 'Adaptive'],
     projectUrl: 'https://bakayalexander.github.io/russian-travel/',
     projectRepo: 'https://github.com/BakayAlexander/russian-travel',
+    text: 'This website tells about traveling. Be ware! Russian language.',
   },
 
   {
@@ -33,6 +35,7 @@ export const portfolioData = [
     keywords: ['Class components', 'JS'],
     projectUrl: 'https://github.com/BakayAlexander/mesto',
     projectRepo: 'https://github.com/BakayAlexander/mesto',
+    text: 'If I was asked to write an Instagram in the first months of studying JS...',
   },
 
   {
@@ -43,6 +46,7 @@ export const portfolioData = [
     keywords: ['React', 'Routing', 'Api'],
     projectUrl: 'https://bakayalexander.github.io/blog-react/',
     projectRepo: 'https://github.com/BakayAlexander/blog-react',
+    text: 'React Routing training web app. For fun, it uses Lord of the rings api!)',
   },
 
   {
@@ -53,6 +57,7 @@ export const portfolioData = [
     keywords: ['React', 'Auth', 'Routing', 'Api'],
     projectUrl: 'http://bakay.nomoredomains.work/',
     projectRepo: 'https://github.com/BakayAlexander/movies-explorer-frontend',
+    text: 'Diploma project at Yandex Practicum. You can register, search for movies and like them.',
   },
 
   {
@@ -62,6 +67,7 @@ export const portfolioData = [
     category: 'Study',
     keywords: ['Express.js', 'MongoDB', 'Celebrate'],
     projectRepo: 'https://github.com/BakayAlexander/movies-explorer-api',
+    text: 'My backend for diploma project at Yandex Practicum.',
   },
 
   {
@@ -72,6 +78,7 @@ export const portfolioData = [
     keywords: ['React', 'Api'],
     projectUrl: 'https://bakay-cats-pinterest.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/frontend-challenge',
+    text: 'Cats Pinterest was made as fun frontend challenge.',
   },
 
   {
@@ -82,6 +89,7 @@ export const portfolioData = [
     keywords: ['React', 'Redux toolkit'],
     projectUrl: 'https://blog-manager-bakay.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/blog-manager',
+    text: 'This simple project was a training of my Redux Toolkit skills.',
   },
 
   {
@@ -92,6 +100,7 @@ export const portfolioData = [
     keywords: ['React', 'React Query', 'Api'],
     projectUrl: 'https://bakay-react-inf-scroll.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/react_infinite_scroll',
+    text: 'Two ways of implementation of Infinite Scroll: on clean React and on React Query.',
   },
   {
     id: '10',
@@ -101,6 +110,7 @@ export const portfolioData = [
     keywords: ['React', 'Redux'],
     projectUrl: 'https://bakay-task-manager.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/task-manager',
+    text: 'Very simple task manager, where you can add, update and delete your tasks.',
   },
   {
     id: '11',
@@ -109,6 +119,7 @@ export const portfolioData = [
     category: 'Commercial',
     keywords: ['React', 'i18n', 'Ant design'],
     projectUrl: 'https://magnolia-charter.com/',
+    text: 'Commercial app for renting charter yachts and supercars in France.',
   },
   {
     id: '12',
@@ -118,5 +129,6 @@ export const portfolioData = [
     keywords: ['Next', 'TypeScript', 'Tailwind', 'Firebase'],
     projectUrl: 'https://bakay-netflix.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/netflix-2022',
+    text: 'Netflix clone with Firebase and Stripe integration. You can register, buy subscription, watch trailers.',
   },
 ];
