@@ -20,3 +20,6 @@ export const NAV__LINK = [
     display: 'Contact',
   },
 ];
+
+export const baseUrlYouTubeVideo = 'https://www.youtube.com/watch?v=';
+export const defaultUrlYouTubeVideo = '0Z1fdCFF8VY';

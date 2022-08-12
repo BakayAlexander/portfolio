@@ -9,6 +9,11 @@
   color: #01d293;
   margin-bottom: 20px;
   background: transparent;
+  cursor: pointer;
+}
+
+.portfolio__item h6:hover {
+  color: #fff;
 }
 
 .portfolio__keyword {
@@ -18,11 +23,13 @@
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .portfolio__image {
   margin: 20px 0px;
   background: transparent;
+  cursor: pointer;
 }
 
 .portfolio__image img {
@@ -40,6 +47,7 @@
 .portfolio__text {
   background: transparent;
   height: 3rem;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 576px) {

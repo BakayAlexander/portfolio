@@ -22,6 +22,8 @@ The page will reload when you make changes.
 - :shoe: CodeStyle - Prettier
 - :control_knobs: Remixicon
 - :framed_picture: Slick carousel
+- Recoil
+- React Player
 
 ### :desktop_computer: Public domain
 

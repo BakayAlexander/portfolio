@@ -14,6 +14,19 @@ export const portfolioData = [
     projectUrl: 'https://balaclava-static.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/balaklava-project',
     text: `Small non-adaptive website about Balaclava's history, before its occupation.`,
+    youTubeVideo: 'KWP92fK0pXA',
+  },
+
+  {
+    id: '3',
+    title: 'Personal blog',
+    image: '/images/project-04.jpg',
+    category: 'Study',
+    keywords: ['React', 'Routing', 'Api'],
+    projectUrl: 'https://bakayalexander.github.io/blog-react/',
+    projectRepo: 'https://github.com/BakayAlexander/blog-react',
+    text: 'React Routing training web app. For fun, it uses Lord of the rings api!)',
+    youTubeVideo: 'wY-Zns7DxnM',
   },
 
   {
@@ -25,53 +38,11 @@ export const portfolioData = [
     projectUrl: 'https://bakayalexander.github.io/russian-travel/',
     projectRepo: 'https://github.com/BakayAlexander/russian-travel',
     text: 'This website tells about traveling. Be ware! Russian language.',
-  },
-
-  {
-    id: '3',
-    title: 'Mesto',
-    image: '/images/project-03.jpg',
-    category: 'Study',
-    keywords: ['Class components', 'JS'],
-    projectUrl: 'https://github.com/BakayAlexander/mesto',
-    projectRepo: 'https://github.com/BakayAlexander/mesto',
-    text: 'If I was asked to write an Instagram in the first months of studying JS...',
+    youTubeVideo: 'EbSYqR9y6V0',
   },
 
   {
     id: '4',
-    title: 'Personal blog',
-    image: '/images/project-04.jpg',
-    category: 'Study',
-    keywords: ['React', 'Routing', 'Api'],
-    projectUrl: 'https://bakayalexander.github.io/blog-react/',
-    projectRepo: 'https://github.com/BakayAlexander/blog-react',
-    text: 'React Routing training web app. For fun, it uses Lord of the rings api!)',
-  },
-
-  {
-    id: '5',
-    title: 'Movies Explorer Frontend',
-    image: '/images/project-05.jpg',
-    category: 'Study',
-    keywords: ['React', 'Auth', 'Routing', 'Api'],
-    projectUrl: 'http://bakay.nomoredomains.work/',
-    projectRepo: 'https://github.com/BakayAlexander/movies-explorer-frontend',
-    text: 'Diploma project at Yandex Practicum. You can register, search for movies and like them.',
-  },
-
-  {
-    id: '6',
-    title: 'Movies Explorer Backend',
-    image: '/images/project-06.jpg',
-    category: 'Study',
-    keywords: ['Express.js', 'MongoDB', 'Celebrate'],
-    projectRepo: 'https://github.com/BakayAlexander/movies-explorer-api',
-    text: 'My backend for diploma project at Yandex Practicum.',
-  },
-
-  {
-    id: '7',
     title: 'Cats pinterest',
     image: '/images/project-07.jpg',
     category: 'Study',
@@ -79,6 +50,41 @@ export const portfolioData = [
     projectUrl: 'https://bakay-cats-pinterest.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/frontend-challenge',
     text: 'Cats Pinterest was made as fun frontend challenge.',
+    youTubeVideo: 'Z1tTQSCWXJU',
+  },
+
+  {
+    id: '5',
+    title: 'Mesto',
+    image: '/images/project-03.jpg',
+    category: 'Study',
+    keywords: ['Class components', 'JS'],
+    projectUrl: 'https://bakayalexander.github.io/mesto/',
+    projectRepo: 'https://github.com/BakayAlexander/mesto',
+    text: 'If I was asked to write an Instagram in the first months of studying JS...',
+    youTubeVideo: 'oPRkbpdYzPw',
+  },
+
+  {
+    id: '6',
+    title: 'Movies Explorer Frontend',
+    image: '/images/project-05.jpg',
+    category: 'Study',
+    keywords: ['React', 'Auth', 'Routing', 'Api'],
+    projectUrl: 'http://bakay.nomoredomains.work/',
+    projectRepo: 'https://github.com/BakayAlexander/movies-explorer-frontend',
+    text: 'Diploma project at Yandex Practicum. You can register, search for movies and like them.',
+    youTubeVideo: '7ZuVyz67B3A',
+  },
+
+  {
+    id: '7',
+    title: 'Movies Explorer Backend',
+    image: '/images/project-06.jpg',
+    category: 'Study',
+    keywords: ['Express.js', 'MongoDB', 'Celebrate', 'Mongoose', 'Helmet', 'Limiter'],
+    projectRepo: 'https://github.com/BakayAlexander/movies-explorer-api',
+    text: 'My backend for diploma project at Yandex Practicum.',
   },
 
   {
@@ -90,6 +96,7 @@ export const portfolioData = [
     projectUrl: 'https://blog-manager-bakay.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/blog-manager',
     text: 'This simple project was a training of my Redux Toolkit skills.',
+    youTubeVideo: 'bZ-wBcgX5yk',
   },
 
   {
@@ -101,6 +108,7 @@ export const portfolioData = [
     projectUrl: 'https://bakay-react-inf-scroll.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/react_infinite_scroll',
     text: 'Two ways of implementation of Infinite Scroll: on clean React and on React Query.',
+    youTubeVideo: 'rtEiHyklvbU',
   },
   {
     id: '10',
@@ -111,24 +119,38 @@ export const portfolioData = [
     projectUrl: 'https://bakay-task-manager.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/task-manager',
     text: 'Very simple task manager, where you can add, update and delete your tasks.',
+    youTubeVideo: 'AcpdjpZJGPU',
   },
   {
     id: '11',
     title: 'Magnolia',
     image: '/images/project-11.jpg',
     category: 'Commercial',
-    keywords: ['React', 'i18n', 'Ant design'],
+    keywords: ['React', 'i18n', 'Ant design', 'React Router', 'Docker'],
     projectUrl: 'https://magnolia-charter.com/',
     text: 'Commercial app for renting charter yachts and supercars in France.',
+    youTubeVideo: 'fB_i2IodJqo',
   },
   {
     id: '12',
     title: 'Netflix 2022',
     image: '/images/project-12.jpeg',
     category: 'Study',
-    keywords: ['Next', 'TypeScript', 'Tailwind', 'Firebase'],
+    keywords: [
+      'Next',
+      'TypeScript',
+      'Tailwind',
+      'Firebase',
+      'Stripe',
+      'Redux',
+      'Formik',
+      'MUI',
+      'React Player',
+      'React Hot Toast',
+    ],
     projectUrl: 'https://bakay-netflix.netlify.app/',
     projectRepo: 'https://github.com/BakayAlexander/netflix-2022',
-    text: 'Netflix clone with Firebase and Stripe integration. You can register, buy subscription, watch trailers.',
+    text: 'This is a Netflix clone web app. Fully adaptive. You can register or sign in then choose and pay for your subscription (with in test credit card). Also, you can look at trailer movies and ad those movies to your personal list. If you are logged in and subscribed you can cancel your subscription or change your plan.',
+    youTubeVideo: 'LEN6bAm-nWM',
   },
 ];
