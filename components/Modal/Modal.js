@@ -39,15 +39,11 @@ const Modal = () => {
   const handleClose = () => {
     setModalOpen(false);
     setProject(null);
-    const scrollY = document.body.style.top;
-    document.body.style.position = '';
-    document.body.style.top = '';
-    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    document.body.style.overflow = 'auto';
   };
 
   if (modalOpen) {
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.overflow = 'hidden';
   }
 
   return (
@@ -63,6 +59,20 @@ const Modal = () => {
         <button onClick={handleClose} className={classes.modal__button}>
           <CgClose className={classes.modal__buttonIcon} />
         </button>
+        <div className={classes.modal__link}>
+          {project.projectRepo && (
+            <a href={project.projectRepo} target="_blank" rel="noopener noreferrer">
+              <button className="primary__btn">Repo</button>
+            </a>
+          )}
+          {project.projectUrl && (
+            <button className="secondary__btn">
+              <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
+                Launch
+              </a>
+            </button>
+          )}
+        </div>
         <h3 className={classes.modal__title}>{project.title}</h3>
         <p className={classes.modal__text}>{project.text}</p>
         <div className={classes.modal__keywordsContainer}>

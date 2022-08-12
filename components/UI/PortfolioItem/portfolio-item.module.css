@@ -50,6 +50,10 @@
   cursor: pointer;
 }
 
+.portfolio__text:hover {
+  color: #01d293;
+}
+
 @media only screen and (max-width: 576px) {
   .portfolio__image {
     display: flex;

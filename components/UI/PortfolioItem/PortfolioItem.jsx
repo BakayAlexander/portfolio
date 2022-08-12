@@ -13,14 +13,14 @@ const PortfolioItem = ({ title, image, projectUrl, projectRepo, keywords, text, 
 
   const openModalWithProject = () => {
     setModalOpen(true);
-    setProject({ title, keywords, text, youTubeVideo });
+    setProject({ title, keywords, text, youTubeVideo, projectUrl, projectRepo });
   };
 
   return (
     <div className={classes.portfolio__item}>
       <div className="bg-transparent">
         <h6 onClick={openModalWithProject}>{title}</h6>
-        {keywords.slice(0, 5).map((keyword, index) => (
+        {keywords.slice(0, 4).map((keyword, index) => (
           <span className={classes.portfolio__keyword} key={index} onClick={openModalWithProject}>
             {keyword}
           </span>

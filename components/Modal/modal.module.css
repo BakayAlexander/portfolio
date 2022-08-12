@@ -1,6 +1,7 @@
 .modal {
   display: flex;
   height: 90vh;
+  width: 100%;
   max-width: 72rem;
   border-radius: 0.5rem;
   background-color: #1d2226;
@@ -28,11 +29,23 @@
   color: #01d293;
 }
 
+.modal__link {
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.modal__link a {
+  background: transparent !important;
+}
+
 .modal__text {
   background: transparent;
   padding: 0 30px;
   width: 100%;
   font-size: 18px;
+  text-align: center;
 }
 
 .modal__title {
@@ -65,11 +78,15 @@
     font-size: 12px;
   }
 
+  .modal__keywordsContainer {
+    display: none;
+  }
+
   .modal__text {
     padding: 0 14px;
     font-size: 14px;
   }
-  .modal__keywordsContainer {
+  .modal__link {
     display: none;
   }
 }
