@@ -4,12 +4,15 @@ import 'remixicon/fonts/remixicon.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Layout from '../components/Layout/Layout';
+import { RecoilRoot } from 'recoil';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />;
-    </Layout>
+    <RecoilRoot>
+      <Layout>
+        <Component {...pageProps} />;
+      </Layout>
+    </RecoilRoot>
   );
 }
 

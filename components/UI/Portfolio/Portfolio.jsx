@@ -63,6 +63,7 @@ const Portfolio = () => {
                 projectRepo={portfolio.projectRepo}
                 keywords={portfolio.keywords}
                 text={portfolio.text}
+                youTubeVideo={portfolio.youTubeVideo}
               />
             </Col>
           ))}
