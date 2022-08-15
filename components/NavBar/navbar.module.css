@@ -5,16 +5,18 @@
 }
 
 .nav__menu a {
-  color: #808dad;
+  color: var(--color-primary);
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
   transition: 0.3s;
   cursor: pointer;
+  transition: var(--transition-primary);
 }
 
 .nav__menu a:hover {
-  color: #01d293;
+  color: var(--color-secondary);
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 1000px) {

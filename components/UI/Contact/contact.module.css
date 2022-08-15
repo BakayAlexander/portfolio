@@ -23,12 +23,16 @@
   cursor: pointer;
 }
 
-.contact__item a:hover {
-  color: #01d293 !important;
+.contact__item a p {
+  transition: var(--transition-primary);
+}
+
+.contact__item a p:hover {
+  color: var(--color-secondary) !important;
 }
 
 .contact__item span i {
-  color: #01d293;
+  color: var(--color-secondary);
   font-size: 1.2rem;
   padding: 5px;
   border-radius: 5px;
@@ -44,8 +48,13 @@
 }
 
 .social__links a {
-  color: #808dad !important;
+  color: var(--color-primary) !important;
   text-decoration: none;
+  transition: var(--transition-primary);
+}
+
+.social__links a:hover {
+  color: var(--color-secondary) !important;
 }
 
 @media only screen and (max-width: 768px) {
