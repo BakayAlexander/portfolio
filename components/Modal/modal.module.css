@@ -16,17 +16,18 @@
   z-index: 55;
   border: none;
   background: transparent;
-  color: white;
+  color: #fff;
   height: 25px;
   width: 25px;
+  transition: var(--transition-primary);
+}
+
+.modal__button:hover {
+  color: var(--color-secondary);
 }
 
 .modal__buttonIcon {
   background: transparent !important ;
-}
-
-.modal__button:hover {
-  color: #01d293;
 }
 
 .modal__link {
@@ -51,7 +52,7 @@
 .modal__title {
   text-align: center;
   background: transparent;
-  color: #01d293;
+  color: var(--color-secondary);
   margin-top: 20px;
 }
 
@@ -66,7 +67,7 @@
 .modal__keyword {
   padding: 5px 10px;
   color: #fff;
-  background: #808dad68;
+  background: var(--color-primary);
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;

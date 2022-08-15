@@ -3,7 +3,7 @@
 }
 
 .profile__content h5 {
-  color: #808dad;
+  color: var(--color-primary);
   font-weight: 400;
 }
 
@@ -29,7 +29,7 @@
   left: 33%;
   transform: translateY(-50%);
   border-radius: 5px;
-  background: #808dad26;
+  background: var(--color-primary);
   z-index: 3;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .profile__skills span i {
-  color: #01d293;
+  color: var(--color-secondary);
   background: transparent;
 }
 
@@ -54,7 +54,7 @@
   right: 5%;
   padding: 10px 20px;
   border-radius: 5px;
-  background: #808dad26;
+  background: var(--color-primary);
   z-index: 3;
 }
 
@@ -78,8 +78,8 @@
 
 .profile__exp span i {
   padding: 5px;
-  color: #01d293;
-  background: #808dad;
+  color: var(--color-secondary);
+  background: var(--color-primary);
   border-radius: 5px;
 }
 

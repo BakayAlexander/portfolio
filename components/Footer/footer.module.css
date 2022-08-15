@@ -1,5 +1,5 @@
 .nav__right p {
-  color: #01d293;
+  color: var(--color-secondary);
   margin-left: 20px;
   position: relative;
 }
@@ -11,7 +11,7 @@
 }
 
 .footer__copyright {
-  border-top: 1px solid #808dad;
+  border-top: 1px solid var(--color-primary);
 }
 
 .footer__copyright p {

@@ -13,5 +13,5 @@
 }
 
 .testimonial__client h6:last-child {
-  color: #01d293 !important;
+  color: var(--color-secondary) !important;
 }

@@ -1,15 +1,23 @@
 .portfolio__item {
-  background: #171f38;
+  background: var(--color-tertiary);
   padding: 30px 20px 20px 20px;
   border-radius: 10px;
   height: 100%;
+  transition: 0.3s ease-in;
+  opacity: 0.8;
+  transition: var(--transition-primary);
+}
+
+.portfolio__item:hover {
+  opacity: 1;
 }
 
 .portfolio__item h6 {
-  color: #01d293;
+  color: var(--color-secondary);
   margin-bottom: 20px;
   background: transparent;
   cursor: pointer;
+  transition: var(--transition-primary);
 }
 
 .portfolio__item h6:hover {
@@ -19,7 +27,7 @@
 .portfolio__keyword {
   padding: 5px 10px;
   color: #fff;
-  background: #808dad68;
+  background: var(--color-primary);
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;
@@ -41,20 +49,24 @@
 }
 
 .portfolio__link a {
-  background: #171f38 !important;
+  background: var(--color-tertiary) !important;
 }
 
 .portfolio__text {
   background: transparent;
   height: 3rem;
   cursor: pointer;
+  transition: var(--transition-primary);
 }
 
 .portfolio__text:hover {
-  color: #01d293;
+  color: var(--color-secondary);
 }
 
 @media only screen and (max-width: 576px) {
+  .portfolio__item {
+    opacity: 1;
+  }
   .portfolio__image {
     display: flex;
     flex-direction: column;

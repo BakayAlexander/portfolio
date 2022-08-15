@@ -16,11 +16,11 @@
 }
 
 .logo h1 span {
-  color: #01d293;
+  color: var(--color-secondary);
 }
 
 .nav__right i {
-  color: #808dad;
+  color: var(--color-primary);
 }
 
 .nav__right p {
@@ -34,17 +34,19 @@
   left: -20px;
   width: 1px;
   height: 14px;
-  background: #808dad;
+  background: var(--color-primary);
 }
 
 .nav__whatsApp {
   text-decoration: none;
   cursor: pointer;
-  color: #808dad;
+  color: var(--color-primary);
+  transition: var(--transition-primary);
 }
 
 .nav__whatsApp:hover {
-  color: #01d293;
+  color: var(--color-secondary);
+  opacity: 0.9;
 }
 
 .navigation {
@@ -61,7 +63,7 @@
   width: 100%;
   height: 80px;
   line-height: 80px;
-  box-shadow: 5px 5px 30px -5px #01d29344 !important;
+  box-shadow: 5px 5px 30px -5px var(--color-secondary, 0.9) !important;
   z-index: 10;
 }
 
@@ -86,7 +88,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #171f3897;
+    background: var(--color-tertiary);
     z-index: 10;
     display: none;
   }
