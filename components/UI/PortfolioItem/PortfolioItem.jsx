@@ -27,7 +27,7 @@ const PortfolioItem = ({ title, image, projectUrl, projectRepo, keywords, text, 
         ))}
       </div>
       <div className={classes.portfolio__image} onClick={openModalWithProject}>
-        <Image src={image} alt="project image" width="380" height="250" />
+        <Image src={image} alt="project image" width="380" height="250" objectFit="contain" />
       </div>
       <p className={classes.portfolio__text} onClick={openModalWithProject}>
         {truncate(text, 70)}
