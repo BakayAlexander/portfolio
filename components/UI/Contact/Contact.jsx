@@ -44,7 +44,7 @@ const Contact = () => {
               <a href={contactInfo.instagram} target="_blank" rel="noopener noreferrer">
                 <i className="ri-instagram-line"></i>
               </a>
-              <a href={contactInfo.instagram} target="_blank" rel="noopener noreferrer">
+              <a href={contactInfo.github} target="_blank" rel="noopener noreferrer">
                 <i className="ri-github-line"></i>
               </a>
             </div>
