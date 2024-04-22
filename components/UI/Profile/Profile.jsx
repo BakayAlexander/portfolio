@@ -60,7 +60,7 @@ const Profile = () => {
                 </span>
                 <div className="bg-transparent">
                   <h6>Experience</h6>
-                  <h5 className="mb-0">2 years</h5>
+                  <h5 className="mb-0">{` > 3 years`}</h5>
                 </div>
               </div>
             </div>

@@ -208,4 +208,15 @@ export const portfolioData = [
     text: 'Android App for truck drivers. Allows driver to control his trip details and share information with manager. Driver can also upload trip docs and change trip params.',
     youTubeVideo: 'JqPki81dhhA',
   },
+  {
+    id: '17',
+    title: 'Eyestock',
+    image: '/images/project-17.png',
+    category: 'Commercial',
+    keywords: ['Next', 'TypeScript', 'Zustand', 'Websockets', 'Module CSS', 'JWT Auth', 'Semrush', 'SEO'],
+    projectUrl: 'https://eyestock.io/',
+    projectRepo: '',
+    text: 'Web app for stock investors. Over 2mln static generated pages. Users can create their own portfolios and watchlists. Screener with over 70 filters and 18k stocks. Notification system on websockets and email. SEO optimized with NextJS and Semrush tools.',
+    youTubeVideo: 'MPSejvmbTvw',
+  },
 ];
